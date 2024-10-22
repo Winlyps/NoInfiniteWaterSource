@@ -1,0 +1,5 @@
+name: NoInfiniteWaterSource
+version: '1.0.0'
+main: winlyps.noInfiniteWaterSource.NoInfiniteWaterSource
+api-version: '1.20'
+authors: [ Winlyps ]
