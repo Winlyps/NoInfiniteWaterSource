@@ -14,6 +14,9 @@ class NoInfiniteWaterSource : JavaPlugin() {
 
     override fun onDisable() {
         // Plugin shutdown logic
-        logger.info("NoInfiniteWaterSource plugin has been disabled.")
+        server.worlds.forEach { world ->
+            world.setGameRuleValue("waterSourceConversion", "true")
+            logger.info("NoInfiniteWaterSource plugin has been disabled.")
+        }
     }
 }
